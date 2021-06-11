@@ -359,7 +359,7 @@ Moran’s I指数散点图能更加直观地刻画局域空间相关性。其中
 ]
 
 ---
-# 基本事实1：营商环境子系统与综合指数变化趋势
+# 基本事实
 
 .panelset[
 
@@ -385,32 +385,16 @@ knitr::include_graphics("pic/fig2.svg")
 
 
 
+.panel[.panel-name[3、营商环境综合指标空间分布情况]
+
+```{r echo=FALSE,fig.align='center',out.width="60%"}
+
+knitr::include_graphics("pic/hello.gif")
+
+```
+
 ]]
-
----
-# 基本事实2：营商环境综合指标空间分布
-
-```{r echo=FALSE, out.width="100%"}
-load("pic/fig_2010.rda")
-fig_2010
-```
-
-
----
-# 基本事实2：营商环境综合指标空间分布
-
-```{r echo=FALSE, out.width="100%"}
-load("pic/fig_2015.rda")
-fig_2015
-```
-
----
-# 基本事实2：营商环境综合指标空间分布
-
-```{r echo=FALSE, out.width="100%"}
-load("pic/fig_2019.rda")
-fig_2019
-```
+]
 
 
 ---

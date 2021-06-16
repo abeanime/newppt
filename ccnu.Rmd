@@ -73,7 +73,7 @@ xaringanExtra::use_logo(
 </style>
 
 
-# 本文框架与技术路线
+# 技术路线与本文框架
 
 .panelset[
 
@@ -220,45 +220,6 @@ knitr::include_graphics("pic/lr.svg")
 ```{r echo=FALSE}
 knitr::include_graphics("pic/1.svg")
 ```
-]
-
-
-
-
-.panel[.panel-name[Dagum基尼系数公式*]
-
-\begin{equation}
-G=\sum_{j=1}^{k} \sum_{h=1}^{k} \sum_{i=1}^{n_{j}} \sum_{r=1}^{n_{h}}\left|y_{j i}-y_{h r}\right| /\left(2 n^{2} \bar{y}\right)  \tag{1}
-\end{equation}
-
-其中，    $G$ 表示整体基尼系数，数值越大表示总体的差异越大；    $k$ 为区域划分个数，在本文中    $k$ 为3；    $n$ 为省份总个数，在本文中    $n$ 为30；而    $n_j（n_h）$  为第    $j（h）$  个区域内部的省份个数；    $y_{ji}（y_{hr}）$  为第    $j（h）$  个区域内部营商环境指标；    $\bar{y}$ 为全国营商环境指标的均值。
-
-
-
-.pull-left[
-
-#### 基本思路：
-```{r echo=FALSE}
-knitr::include_graphics("pic/2.svg")
-```
-
-
-]
-
-.pull-right[
-
-#### 编程角度：
-
-- Stata：
-  - 使用宽数据进行计算（<span style='color:red'>要熟悉gather、spread、reshape命令</span>）；
-  - 使用`forval`循环，对观测值进行循环（<span style='color:red'>多层嵌套，后期维护成本高</span>）。
-  
-- R：
-  - 结合使用泛函编程和向量化编程（<span style='color:red'>方便直观，后期维护成本低</span>）。
-
-]
-
-
 ]
 
 
@@ -585,6 +546,16 @@ knitr::include_graphics("pic/lisa.svg")
 ---
 # 结论
 
+
+- 第一，从基本事实特征来看。
+
+- 第二，从地区差异来看。
+
+- 第三，从动态分布演进特征来看。
+
+- 第四，从收敛机制来看。
+
+- 最后，从空间集聚性来看。
 
 
 

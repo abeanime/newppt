@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="author" content="张沐" />
     <meta name="author" content="程烺" />
-    <meta name="date" content="2021-06-11" />
+    <meta name="date" content="2021-06-16" />
     <script src="ccnu_files/header-attrs-2.7/header-attrs.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x7aa0c6fe89741cb95b77367cbf06fff","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x7ba05debb134e49b1b9df392211acf6","expires":14}</script>
     <script src="ccnu_files/himalaya-1.1.0/himalaya.js"></script>
     <script src="ccnu_files/js-cookie-3.0.0/js.cookie.js"></script>
     <link href="ccnu_files/editable-0.2.6/editable.css" rel="stylesheet" />
@@ -49,7 +49,7 @@ class: center, middle, inverse, title-slide
 ### 张沐
 ### 程烺
 ### <br> 华中师范大学<br>经济与工商管理学院
-### 2021-06-11
+### 2021-06-16
 
 ---
 
@@ -100,7 +100,7 @@ top:0.3em;right:1em;
 &lt;/style&gt;
 
 
-# 本文框架与技术路线
+# 技术路线与本文框架
 
 .panelset[
 
@@ -236,43 +236,6 @@ top:0.3em;right:1em;
 
 
 ![](pic/1.svg)&lt;!-- --&gt;
-]
-
-
-
-
-.panel[.panel-name[Dagum基尼系数公式*]
-
-`\begin{equation}
-G=\sum_{j=1}^{k} \sum_{h=1}^{k} \sum_{i=1}^{n_{j}} \sum_{r=1}^{n_{h}}\left|y_{j i}-y_{h r}\right| /\left(2 n^{2} \bar{y}\right)  \tag{1}
-\end{equation}`
-
-其中，    `\(G\)` 表示整体基尼系数，数值越大表示总体的差异越大；    `\(k\)` 为区域划分个数，在本文中    `\(k\)` 为3；    `\(n\)` 为省份总个数，在本文中    `\(n\)` 为30；而    `\(n_j（n_h）\)`  为第    `\(j（h）\)`  个区域内部的省份个数；    `\(y_{ji}（y_{hr}）\)`  为第    `\(j（h）\)`  个区域内部营商环境指标；    `\(\bar{y}\)` 为全国营商环境指标的均值。
-
-
-
-.pull-left[
-
-#### 基本思路：
-![](pic/2.svg)&lt;!-- --&gt;
-
-
-]
-
-.pull-right[
-
-#### 编程角度：
-
-- Stata：
-  - 使用宽数据进行计算（&lt;span style='color:red'&gt;要熟悉gather、spread、reshape命令&lt;/span&gt;）；
-  - 使用`forval`循环，对观测值进行循环（&lt;span style='color:red'&gt;多层嵌套，后期维护成本高&lt;/span&gt;）。
-  
-- R：
-  - 结合使用泛函编程和向量化编程（&lt;span style='color:red'&gt;方便直观，后期维护成本低&lt;/span&gt;）。
-
-]
-
-
 ]
 
 
@@ -565,6 +528,16 @@ Moran’s I指数散点图能更加直观地刻画局域空间相关性。其中
 ---
 # 结论
 
+
+- 第一，从基本事实特征来看。
+
+- 第二，从地区差异来看。
+
+- 第三，从动态分布演进特征来看。
+
+- 第四，从收敛机制来看。
+
+- 最后，从空间集聚性来看。
 
 
 
